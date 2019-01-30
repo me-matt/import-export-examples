@@ -1,0 +1,18 @@
+{
+  "name": "import-export-examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/me-matt/import-export-examples.git",
+  "author": "Matt Waldron <matthew.waldron@hotmail.co.uk>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1"
+  },
+  "scripts": {
+    "build": "babel src --out-dir build --presets=@babel/preset-env",
+    "start": "clear && yarn && yarn build && yarn start:node",
+    "start:node": "node build/index.js"
+  }
+}
